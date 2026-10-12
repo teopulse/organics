@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traditional Organics — Pure Homemade Masalas & Cold-Pressed Oils</title>
+  <meta name="description" content="Authentic homemade stone-ground masalas, mara chekku cold-pressed oils, and traditional pickles with direct WhatsApp ordering." />
+  <meta property="og:title" content="Traditional Organics — Pure Homemade Masalas & Cold-Pressed Oils" />
+  <meta property="og:description" content="Authentic homemade stone-ground masalas, mara chekku cold-pressed oils, and traditional pickles with direct WhatsApp ordering." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            },
+            turmeric: {
+              500: '#d97706',
+              600: '#b45309',
+            },
+            leaf: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            ivory: {
+              50: '#fffdfa',
+              100: '#fefbf6',
+              200: '#fcf6ec',
+              300: '#f8eedb',
+            },
+            whatsapp: {
+              500: '#25D366',
+              600: '#128C7E',
+              700: '#075E54',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom scrollbars and subtle Indian pattern elements */
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FEFAF4;
+      color: #2D1A12;
+      overflow-x: hidden;
+    }
+    
+    .font-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Subtle rangoli / spice textured background */
+    .hero-pattern {
+      background-color: #FEFAF4;
+      background-image: radial-gradient(#C2410C 0.65px, transparent 0.65px), radial-gradient(#15803D 0.65px, #FEFAF4 0.65px);
+      background-size: 26px 26px;
+      background-position: 0 0, 13px 13px;
+      background-opacity: 0.05;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FEFAF4;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #E2CEB9;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C2410C;
+    }
+
+    /* Drawer animation classes */
+    .cart-drawer-open {
+      transform: translateX(0%);
+    }
+    .cart-drawer-closed {
+      transform: translateX(100%);
+    }
+
+    /* Toast animation */
+    @keyframes slideInUp {
+      from { transform: translateY(100%) scale(0.9); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+    .toast-anim {
+      animation: slideInUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-[#FEFAF4] text-[#2A170F] antialiased selection:bg-terracotta-100 selection:text-terracotta-800">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <aside aria-label="Announcement" class="bg-terracotta-800 text-amber-100 text-xs py-2 px-4 border-b border-terracotta-900/40">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium text-amber-50">Fresh Batch:</span>
+        <span>Stone ground & wood-pressed this week. Zero preservatives or artificial colors.</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <span class="hidden sm:inline-flex items-center gap-1.5 text-amber-200">
+          <i class="fa-solid fa-truck-fast text-amber-300"></i> Free City Delivery on orders above ₹700
+        </span>
+        <a href="https://wa.me/919876543210?text=Hello%20Traditional%20Organics,%20I%20would%20like%20to%20inquire%20about%20your%20homemade%20masalas%20and%20oils." target="_blank" rel="noopener noreferrer" class="hover:text-white font-semibold transition-colors flex items-center gap-1">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> +91 98765 43210
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- STICKY HEADER & NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-[#FEFAF4]/95 backdrop-blur-md border-b border-terracotta-100/80 transition-all shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo & Identity -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl bg-terracotta-700 text-amber-50 flex items-center justify-center shadow-md shadow-terracotta-700/20 group-hover:scale-105 transition-transform duration-200">
+            <i class="fa-solid fa-mortar-pestle text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-serif text-2xl font-bold tracking-tight text-terracotta-900 leading-none">Traditional Organics</span>
+              <span class="inline-flex items-center text-[10px] tracking-widest uppercase font-bold text-leaf-800 bg-leaf-100/80 px-2 py-0.5 rounded-full border border-leaf-600/20">Pure & Desi</span>
+            </div>
+            <p class="text-[11px] font-medium tracking-wide text-terracotta-800/80 mt-1">Pure Homemade Masalas &amp; Cold-Pressed Oils</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-stone-700">
+          <a href="#masalas" class="hover:text-terracotta-700 transition-colors">Masala Powders</a>
+          <a href="#oils" class="hover:text-terracotta-700 transition-colors">Cold-Pressed Oils</a>
+          <a href="#pickles" class="hover:text-terracotta-700 transition-colors">Pickles &amp; Thokku</a>
+          <a href="#why-us" class="hover:text-terracotta-700 transition-colors">Why Us</a>
+          <a href="#reviews" class="hover:text-terracotta-700 transition-colors">Reviews</a>
+        </nav>
+
+        <!-- Right Header Actions (WhatsApp direct + Cart Badge) -->
+        <div class="flex items-center gap-3">
+          <!-- WhatsApp Quick Chat Button -->
+          <a href="https://wa.me/919876543210?text=Hello%20Traditional%20Organics,%20I%20have%20a%20query%20about%20ordering." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 py-2.5 px-3.5 rounded-lg transition-all shadow-xs" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i>
+            <span>Quick Help</span>
+          </a>
+
+          <!-- Cart Button with Counter Badge -->
+          <button id="open-cart-btn" class="relative flex items-center gap-2.5 bg-terracotta-700 hover:bg-terracotta-800 text-white px-4 py-2.5 rounded-lg font-semibold text-sm shadow-md shadow-terracotta-700/20 active:scale-95 transition-all">
+            <i class="fa-solid fa-basket-shopping text-base"></i>
+            <span class="hidden sm:inline">My Basket</span>
+            <span id="cart-counter" class="bg-amber-400 text-terracotta-950 font-bold text-xs px-2 py-0.5 rounded-full min-w-5 text-center">0</span>
+            <span id="header-cart-total" class="hidden lg:inline text-amber-200 text-xs font-semibold pl-1 border-l border-terracotta-600">₹0</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" class="md:hidden text-stone-700 hover:text-terracotta-700 p-2 rounded-lg text-lg focus:outline-hidden" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars" id="mobile-menu-icon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="hidden md:hidden border-t border-terracotta-100 bg-[#FEFAF4] px-4 pt-3 pb-5 space-y-3 shadow-lg">
+      <div class="grid grid-cols-2 gap-2 text-sm font-medium">
+        <a href="#masalas" class="mobile-nav-link p-2.5 rounded-md hover:bg-terracotta-50 text-stone-800 flex items-center gap-2"><i class="fa-solid fa-pepper-hot text-terracotta-600"></i> Masalas</a>
+        <a href="#oils" class="mobile-nav-link p-2.5 rounded-md hover:bg-terracotta-50 text-stone-800 flex items-center gap-2"><i class="fa-solid fa-bottle-droplet text-amber-600"></i> Mara Chekku Oils</a>
+        <a href="#pickles" class="mobile-nav-link p-2.5 rounded-md hover:bg-terracotta-50 text-stone-800 flex items-center gap-2"><i class="fa-solid fa-jar text-rose-700"></i> Home Pickles</a>
+        <a href="#why-us" class="mobile-nav-link p-2.5 rounded-md hover:bg-terracotta-50 text-stone-800 flex items-center gap-2"><i class="fa-solid fa-shield-halved text-leaf-700"></i> Why Choose Us</a>
+      </div>
+      <div class="pt-2 border-t border-terracotta-100 flex items-center justify-between">
+        <span class="text-xs text-stone-600">Helpline: +91 98765 43210</span>
+        <a href="https://wa.me/919876543210?text=Hello%20Traditional%20Organics" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-700 flex items-center gap-1">
+          <i class="fa-brands fa-whatsapp text-emerald-600"></i> Message Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative hero-pattern py-12 md:py-20 border-b border-terracotta-100 overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute -top-16 -right-16 w-80 h-80 rounded-full bg-amber-100/50 blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-16 -left-16 w-80 h-80 rounded-full bg-terracotta-100/40 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-terracotta-50 border border-terracotta-200 text-terracotta-800 text-xs font-semibold">
+            <i class="fa-solid fa-seedling text-leaf-700"></i>
+            <span>Small-Batch Artisanal Home Kitchen</span>
+            <span class="text-stone-300">|</span>
+            <span class="text-stone-600">100% Sun-Dried Spices</span>
+          </div>
+
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-terracotta-950 leading-[1.15]">
+            Pure, Chemical-Free <br class="hidden sm:inline" />
+            <span class="text-terracotta-700 underline decoration-amber-400 decoration-wavy decoration-2">Homemade Masalas</span> &amp; Cold-Pressed Oils
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Crafted exactly the way our grandmothers made them. Sun-dried Guntur chillies, fragrant Salem turmeric, stone-ground rasam powders, and unrefined wood-pressed (<em>Mara Chekku</em>) oils. Zero chemical solvents, zero artificial color, delivered straight to your home.
+          </p>
+
+          <!-- Dual CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#catalog" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-terracotta-700 hover:bg-terracotta-800 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-terracotta-700/25 transition-all transform hover:-translate-y-0.5">
+              <span>Shop Fresh Products</span>
+              <i class="fa-solid fa-arrow-down text-sm"></i>
+            </a>
+
+            <a href="https://wa.me/919876543210?text=Hello%20Traditional%20Organics,%20I%20would%20like%20to%20order%20homemade%20masalas%20and%20cold-pressed%20oils." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-600/20 transition-all transform hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Order on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="pt-6 border-t border-terracotta-200/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-leaf text-sm"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Zero Chemicals</p>
+                <p class="text-[11px] text-stone-600">No Sudan dyes or MSG</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-tree text-sm"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Mara Chekku</p>
+                <p class="text-[11px] text-stone-600">Vagai wood pressed</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-sun text-sm"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Sun-Dried Whole</p>
+                <p class="text-[11px] text-stone-600">Hand-cleaned spices</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-house-chimney text-sm"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-stone-900">Small-Batch</p>
+                <p class="text-[11px] text-stone-600">Ground fresh weekly</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Mosaic -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Main Hero Image (Authentic Indian spices in brass bowls) -->
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-amber-100 aspect-4/3 sm:aspect-5/4">
+              <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1000&q=80" alt="Vibrant freshly ground Indian spices, turmeric and red chillies" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700" loading="eager" />
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+              
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="text-[11px] font-bold uppercase tracking-wider bg-terracotta-700/90 backdrop-blur-xs px-2.5 py-1 rounded-sm text-amber-200">Weekly Harvest</span>
+                <p class="font-serif text-lg font-bold mt-1 text-white">Stone-pounded Sambar &amp; Rasam Masalas</p>
+                <p class="text-xs text-amber-200/90">Aroma that fills the whole street</p>
+              </div>
+            </div>
+
+            <!-- Floating Sub-card 1: Cold-pressed oils -->
+            <div class="absolute -bottom-6 -left-6 sm:-left-8 bg-white/95 backdrop-blur-md p-3.5 rounded-xl shadow-xl border border-amber-100 flex items-center gap-3 max-w-60">
+              <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=160&q=80" alt="Cold pressed groundnut and sesame oil" class="w-14 h-14 rounded-lg object-cover" />
+              <div>
+                <div class="flex items-center gap-1 text-amber-500 text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-xs font-bold text-stone-900 mt-0.5">Wood-Pressed Oils</p>
+                <p class="text-[11px] text-stone-600">Dense aroma &amp; zero foam</p>
+              </div>
+            </div>
+
+            <!-- Floating Sub-card 2: Freshness Guarantee -->
+            <div class="absolute -top-4 -right-4 sm:-right-6 bg-amber-50 p-3 rounded-xl shadow-lg border border-amber-200/80 flex items-center gap-2.5 text-terracotta-900">
+              <div class="w-9 h-9 rounded-full bg-terracotta-700 text-white flex items-center justify-center font-bold text-sm">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="text-left">
+                <p class="text-xs font-bold leading-tight">100% Authentic</p>
+                <p class="text-[10px] text-stone-600">FSSAI Certified Kitchen</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CATALOG SECTION -->
+  <main id="catalog" class="py-14 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-1">
+    
+    <!-- Section Heading -->
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-terracotta-700 mb-2">
+        <i class="fa-solid fa-spoon"></i>
+        <span>Handcrafted In Small Batches</span>
+        <i class="fa-solid fa-spoon"></i>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight">Our Farm-To-Kitchen Collection</h2>
+      <p class="text-stone-600 text-sm sm:text-base mt-2">
+        Select your desired weight or volume variant. All products are freshly prepared and packed upon order in food-grade eco containers.
+      </p>
+    </div>
+
+    <!-- Category Tabs & Search Controls -->
+    <div class="mb-10 space-y-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-1.5 p-1.5 bg-stone-200/60 rounded-xl w-full md:w-auto" id="category-tabs" role="tablist">
+          <button data-cat="all" class="cat-btn active-cat px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all shadow-xs bg-terracotta-700 text-white">
+            <i class="fa-solid fa-border-all mr-1.5"></i> All Products (<span id="count-all">14</span>)
+          </button>
+          <button data-cat="masala" class="cat-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all text-stone-700 hover:text-stone-900 hover:bg-white/60">
+            <i class="fa-solid fa-pepper-hot mr-1.5 text-terracotta-600"></i> Masala Powders (<span id="count-masala">6</span>)
+          </button>
+          <button data-cat="oil" class="cat-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all text-stone-700 hover:text-stone-900 hover:bg-white/60">
+            <i class="fa-solid fa-bottle-droplet mr-1.5 text-amber-600"></i> Cold-Pressed Oils (<span id="count-oil">4</span>)
+          </button>
+          <button data-cat="pickle" class="cat-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all text-stone-700 hover:text-stone-900 hover:bg-white/60">
+            <i class="fa-solid fa-jar mr-1.5 text-rose-700"></i> Pickles &amp; Thokku (<span id="count-pickle">4</span>)
+          </button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative w-full md:w-72">
+          <input type="text" id="search-input" placeholder="Search sambar, gingelly, pickle..." class="w-full bg-white border border-stone-200 pl-9 pr-8 py-2.5 rounded-xl text-xs sm:text-sm focus:outline-hidden focus:border-terracotta-600 focus:ring-1 focus:ring-terracotta-600 transition-all shadow-2xs" />
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-stone-400 text-xs"></i>
+          <button id="clear-search-btn" class="hidden absolute right-3 top-3 text-stone-400 hover:text-stone-700 text-xs">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Quick Category Anchor Shortcuts for Direct Jumps -->
+      <div class="hidden sm:flex items-center gap-3 text-xs text-stone-500 pt-1">
+        <span class="font-semibold text-stone-700">Quick Jump:</span>
+        <a href="#masalas" class="hover:text-terracotta-700 hover:underline">Sambar &amp; Rasam Masalas</a>
+        <span>·</span>
+        <a href="#oils" class="hover:text-terracotta-700 hover:underline">Mara Chekku Groundnut &amp; Sesame</a>
+        <span>·</span>
+        <a href="#pickles" class="hover:text-terracotta-700 hover:underline">Avakaya &amp; Garlic Thokku</a>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-7">
+      <!-- Product cards injected dynamically via JavaScript -->
+    </div>
+
+    <!-- Empty search fallback state -->
+    <div id="empty-results" class="hidden py-16 text-center">
+      <div class="w-16 h-16 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center mx-auto text-2xl mb-4">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <h3 class="font-serif text-xl font-bold text-stone-900">No matching products found</h3>
+      <p class="text-sm text-stone-600 mt-1">Try searching for sambar, turmeric, groundnut oil, or mango pickle.</p>
+      <button id="reset-filter-btn" class="mt-4 px-4 py-2 bg-terracotta-700 text-white rounded-lg text-xs font-semibold hover:bg-terracotta-800 transition-colors">
+        Show All Products
+      </button>
+    </div>
+
+  </main>
+
+  <!-- WHY CHOOSE US (TRUST & PURITY STORY) -->
+  <section id="why-us" class="py-16 sm:py-24 bg-gradient-to-b from-[#FEFAF4] to-[#F7EFE4] border-t border-b border-terracotta-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-leaf-800 bg-leaf-100/90 px-3 py-1 rounded-full border border-leaf-700/20">The Purity Guarantee</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mt-3 tracking-tight">Why Our Kitchen Is Different</h2>
+        <p class="text-stone-700 text-sm sm:text-base mt-2">
+          Industrial spices rely on heat machines, cheap starches, and chemical preservatives to extend shelf life. We strictly refuse short-cuts.
+        </p>
+      </div>
+
+      <!-- 4 Pillars of Purity -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="bg-white/90 p-6 sm:p-7 rounded-2xl border border-amber-200/70 shadow-sm hover:shadow-md transition-shadow relative group">
+          <div class="w-14 h-14 rounded-xl bg-terracotta-100 text-terracotta-700 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-ban"></i>
+          </div>
+          <span class="text-[11px] font-bold text-terracotta-700 uppercase tracking-wider">01. 100% Clean</span>
+          <h3 class="font-serif text-lg font-bold text-stone-900 mt-1 mb-2">Preservative &amp; Color-Free</h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Never mixed with artificial red Sudan dye, MSG, fillers, or chemical anti-caking agents. The vibrant colors come purely from native Salem turmeric and sunny Guntur chillies.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-white/90 p-6 sm:p-7 rounded-2xl border border-amber-200/70 shadow-sm hover:shadow-md transition-shadow relative group">
+          <div class="w-14 h-14 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-tree"></i>
+          </div>
+          <span class="text-[11px] font-bold text-amber-800 uppercase tracking-wider">02. Mara Chekku</span>
+          <h3 class="font-serif text-lg font-bold text-stone-900 mt-1 mb-2">Wood-Pressed &amp; Stone Ground</h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Crushed using traditional slow-speed wooden expellers (Vagai wood mortar). Operating strictly under 38°C preserves original nutty aroma, high antioxidants, and natural vitamins.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-white/90 p-6 sm:p-7 rounded-2xl border border-amber-200/70 shadow-sm hover:shadow-md transition-shadow relative group">
+          <div class="w-14 h-14 rounded-xl bg-leaf-100 text-leaf-800 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <span class="text-[11px] font-bold text-leaf-800 uppercase tracking-wider">03. Traditional Care</span>
+          <h3 class="font-serif text-lg font-bold text-stone-900 mt-1 mb-2">Hand-Cleaned Sun-Dried Spices</h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Every whole spice is hand-inspected to remove stems and grit, washed, and sun-dried for multiple days on terrace mats under warm sunlight before slow pounding.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-white/90 p-6 sm:p-7 rounded-2xl border border-amber-200/70 shadow-sm hover:shadow-md transition-shadow relative group">
+          <div class="w-14 h-14 rounded-xl bg-orange-100 text-orange-800 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-hands-bubbles"></i>
+          </div>
+          <span class="text-[11px] font-bold text-orange-800 uppercase tracking-wider">04. Fresh Batches</span>
+          <h3 class="font-serif text-lg font-bold text-stone-900 mt-1 mb-2">Hygienic Small-Batch Packing</h3>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            Ground in small batches of just 15–20kg each week. When your bottle or pack arrives, it smells like a home kitchen that just finished roasted spice pounding.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Traditional Process Timeline / Kitchen Heritage -->
+      <div class="mt-14 bg-white rounded-2xl p-6 sm:p-10 border border-amber-200 shadow-sm">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-3">
+            <span class="text-xs font-bold text-terracotta-700 uppercase tracking-wider">From Our Terrace &amp; Chekku</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-stone-900">How We Make It Every Tuesday &amp; Friday</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              We started making these powders for our own children and relatives who were tired of commercial spices causing acidity and losing fragrance in two weeks. Today, over 1,400 families across the city rely on our weekly batches.
+            </p>
+            <div class="pt-2">
+              <a href="https://wa.me/919876543210?text=Hello%20Traditional%20Organics,%20can%20you%20share%20this%20week's%20fresh%20batch%20schedule?" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-terracotta-700 hover:text-terracotta-800 underline">
+                <span>Inquire about this week's fresh batch schedule</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 text-center">
+            <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200/50">
+              <span class="text-2xl font-bold font-serif text-terracotta-800">100%</span>
+              <p class="text-xs font-semibold text-stone-800 mt-1">Chemical-Free</p>
+              <p class="text-[11px] text-stone-500">Zero synthetic preservatives</p>
+            </div>
+            <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200/50">
+              <span class="text-2xl font-bold font-serif text-terracotta-800">&lt;38°C</span>
+              <p class="text-xs font-semibold text-stone-800 mt-1">Cold Extraction</p>
+              <p class="text-[11px] text-stone-500">True Mara Chekku</p>
+            </div>
+            <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200/50">
+              <span class="text-2xl font-bold font-serif text-terracotta-800">48h</span>
+              <p class="text-xs font-semibold text-stone-800 mt-1">Peak Freshness</p>
+              <p class="text-[11px] text-stone-500">Ground upon demand</p>
+            </div>
+            <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200/50">
+              <span class="text-2xl font-bold font-serif text-terracotta-800">1,400+</span>
+              <p class="text-xs font-semibold text-stone-800 mt-1">Happy Families</p>
+              <p class="text-[11px] text-stone-500">Repeat customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOMER TESTIMONIALS & REVIEWS -->
+  <section id="reviews" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-1.5 text-amber-500 text-sm mb-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <span class="text-xs font-bold text-stone-700 ml-1">4.9 / 5 Rating</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight">Loved by Home Cooks &amp; Families</h2>
+      <p class="text-stone-600 text-sm sm:text-base mt-2">
+        Authentic feedback from daily households who appreciate real taste, unmatched fragrance, and digestive comfort.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      
+      <!-- Review 1 -->
+      <div class="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span class="text-stone-400 text-[11px] ml-2">Verified Purchase</span>
+          </div>
+          <p class="text-stone-800 text-sm leading-relaxed italic">
+            "The moment I opened the Grandma's Sambar Powder pouch, the fragrance took me straight back to my grandmother’s home in Thanjavur. Zero throat irritation, absolutely no heartburn. We now order 1kg every two months!"
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-terracotta-100 text-terracotta-800 font-bold flex items-center justify-center text-sm">
+            MR
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-stone-900">Dr. Malathi Ramesh</h4>
+            <p class="text-xs text-stone-500">Mylapore, Chennai · Ordered Sambar &amp; Rasam Masala</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span class="text-stone-400 text-[11px] ml-2">Verified Purchase</span>
+          </div>
+          <p class="text-stone-800 text-sm leading-relaxed italic">
+            "We completely stopped supermarket oils after tasting their Mara Chekku Groundnut and Gingelly oil. The deep golden colour and intense nutty aroma make dosas and spicy fish curries taste in a completely different league."
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">
+            SN
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-stone-900">Senthil Nathan &amp; Family</h4>
+            <p class="text-xs text-stone-500">RS Puram, Coimbatore · Ordered 5L Chekku Oils</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-amber-500 text-xs mb-3">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span class="text-stone-400 text-[11px] ml-2">Verified Purchase</span>
+          </div>
+          <p class="text-stone-800 text-sm leading-relaxed italic">
+            "Their Poondu (Garlic) Thokku and Idli Podi are lifesavers for busy work mornings. You can actually see whole slow-simmered desi garlic cloves in pure gingelly oil. The WhatsApp ordering is super quick and polite!"
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-leaf-100 text-leaf-800 font-bold flex items-center justify-center text-sm">
+            AH
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-stone-900">Ananya Hegde</h4>
+            <p class="text-xs text-stone-500">Indiranagar, Bengaluru · Ordered Pickles &amp; Podi</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- WhatsApp reviews banner -->
+    <div class="mt-10 p-5 rounded-2xl bg-emerald-50/80 border border-emerald-200/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 text-emerald-900">
+        <i class="fa-brands fa-whatsapp text-3xl text-emerald-600"></i>
+        <div>
+          <p class="text-sm font-bold">Have questions or want customized spice blends?</p>
+          <p class="text-xs text-emerald-700">Message directly on WhatsApp for custom salt levels or mild spice adjustments for toddlers.</p>
+        </div>
+      </div>
+      <a href="https://wa.me/919876543210?text=Hello%20Traditional%20Organics,%20I%20have%20a%20question%20about%20customizing%20spices." target="_blank" rel="noopener noreferrer" class="shrink-0 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp"></i> Chat With Cook
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1F120A] text-amber-100/90 pt-16 pb-12 border-t-4 border-terracotta-700 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-amber-900/50">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-terracotta-700 text-white flex items-center justify-center font-bold text-xl">
+              <i class="fa-solid fa-mortar-pestle"></i>
+            </div>
+            <div>
+              <span class="font-serif text-xl font-bold text-white tracking-wide">Traditional Organics</span>
+              <p class="text-[10px] text-amber-300 font-medium">Pure Homemade Masalas &amp; Cold-Pressed Oils</p>
+            </div>
+          </div>
+
+          <p class="text-xs text-amber-200/80 leading-relaxed max-w-sm">
+            Handcrafted with devotion in our clean artisanal kitchen. Supporting native Indian farmers who practice chemical-free agriculture, and honoring ancestral culinary traditions.
+          </p>
+
+          <!-- FSSAI License Badge -->
+          <div class="p-3 rounded-xl bg-black/40 border border-amber-800/40 inline-flex items-center gap-3">
+            <div class="w-9 h-9 rounded-md bg-amber-900/60 text-amber-300 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase font-bold tracking-wider text-amber-400">FSSAI Registered Kitchen</p>
+              <p class="text-xs font-mono text-white font-semibold">Lic. No: 22423548000192</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links: Products -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-sm font-bold text-white tracking-wider uppercase">Our Products</h4>
+          <ul class="space-y-2 text-xs text-amber-200/80">
+            <li><a href="#masalas" class="hover:text-amber-400 transition-colors">Grandma's Sambar Powder</a></li>
+            <li><a href="#masalas" class="hover:text-amber-400 transition-colors">Traditional Rasam Powder</a></li>
+            <li><a href="#masalas" class="hover:text-amber-400 transition-colors">Salem Pure Turmeric Powder</a></li>
+            <li><a href="#oils" class="hover:text-amber-400 transition-colors">Mara Chekku Groundnut Oil</a></li>
+            <li><a href="#oils" class="hover:text-amber-400 transition-colors">Country Gingelly / Sesame Oil</a></li>
+            <li><a href="#pickles" class="hover:text-amber-400 transition-colors">Avakaya Cut Mango Pickle</a></li>
+            <li><a href="#pickles" class="hover:text-amber-400 transition-colors">Simmered Garlic Thokku</a></li>
+          </ul>
+        </div>
+
+        <!-- Kitchen Address & Timings -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-sm font-bold text-white tracking-wider uppercase">Kitchen Address</h4>
+          <div class="text-xs text-amber-200/80 space-y-2 leading-relaxed">
+            <p class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-terracotta-500 mt-0.5"></i>
+              <span>#14, Sannadhi Street, Near Temple Pond, Mylapore, Chennai, Tamil Nadu — 600004</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-clock text-amber-400"></i>
+              <span>Mon – Sat: 8:00 AM – 7:30 PM</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-calendar-check text-leaf-500"></i>
+              <span>Sun: 9:00 AM – 1:00 PM</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Order Helpline & Sheets Webhook -->
+        <div class="space-y-3">
+          <h4 class="font-serif text-sm font-bold text-white tracking-wider uppercase">Order Helpline</h4>
+          <p class="text-xs text-amber-200/80">
+            Have a bulk wedding or festive return-gift requirement? Contact our kitchen coordinator:
+          </p>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2 rounded-lg transition-colors">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>+91 98765 43210</span>
+          </a>
+
+          <!-- Webhook Config Shortcut for Store Admin -->
+          <div class="pt-3">
+            <button id="open-webhook-modal-btn" class="text-[11px] text-amber-400 hover:text-white underline flex items-center gap-1.5 opacity-80 hover:opacity-100 transition-opacity">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Google Sheets Webhook Setup</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits & Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-amber-300/60 gap-4">
+        <p>© 2026 Traditional Organics. Handcrafted with pride in India.</p>
+        <p class="font-medium text-amber-200/90 flex items-center gap-1.5">
+          <span>Powered by</span>
+          <span class="text-amber-100 font-semibold underline decoration-terracotta-500">TeoPulse</span>
+          <span class="text-amber-400/60">— Zero Monthly Hosting</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING CART BUTTON (BOTTOM RIGHT) -->
+  <div class="fixed bottom-6 right-6 z-40">
+    <button id="floating-cart-btn" class="relative flex items-center gap-3 bg-terracotta-700 hover:bg-terracotta-800 text-white font-bold px-5 py-3.5 rounded-full shadow-2xl shadow-terracotta-900/50 transform hover:scale-105 active:scale-95 transition-all">
+      <i class="fa-solid fa-basket-shopping text-xl"></i>
+      <span class="text-sm">View Cart</span>
+      <span id="floating-cart-badge" class="bg-amber-400 text-terracotta-950 font-black text-xs px-2.5 py-0.5 rounded-full">0</span>
+      <span id="floating-cart-total" class="font-extrabold text-amber-200 text-sm pl-1 border-l border-terracotta-500">₹0</span>
+    </button>
+  </div>
+
+  <!-- CART DRAWER & OVERLAY -->
+  <div id="cart-overlay" class="fixed inset-0 bg-stone-950/60 backdrop-blur-xs z-50 hidden transition-opacity opacity-0"></div>
+
+  <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:max-w-md md:max-w-lg bg-[#FEFAF4] shadow-2xl z-50 flex flex-col cart-drawer-closed transition-transform duration-300 ease-in-out border-l border-terracotta-100">
+    
+    <!-- Drawer Header -->
+    <div class="p-4 sm:p-5 border-b border-stone-200 bg-white flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-lg bg-terracotta-100 text-terracotta-800 flex items-center justify-center font-bold">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div>
+          <h3 class="font-serif text-lg font-bold text-stone-900 leading-tight">Your Order Basket</h3>
+          <p class="text-xs text-stone-500"><span id="cart-item-count-text">0 items</span> selected</p>
+        </div>
+      </div>
+      <button id="close-cart-btn" class="w-8 h-8 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div id="free-delivery-banner" class="bg-amber-50 px-4 py-2.5 border-b border-amber-200/80 text-xs text-stone-700 flex items-center justify-between">
+      <span id="free-delivery-text" class="flex items-center gap-1.5 font-medium">
+        <i class="fa-solid fa-truck text-terracotta-600"></i> Add ₹700 for FREE Local Delivery
+      </span>
+      <span id="delivery-status-tag" class="text-[10px] font-bold text-amber-800 bg-amber-200/80 px-2 py-0.5 rounded-full">Standard</span>
+    </div>
+
+    <!-- Drawer Body (Items List + Checkout Form) -->
+    <div class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-6">
+      
+      <!-- Cart Items Container -->
+      <div id="cart-items-list" class="space-y-3">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Empty Cart State -->
+      <div id="empty-cart-view" class="py-12 text-center space-y-3">
+        <div class="w-16 h-16 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center mx-auto text-2xl">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <h4 class="font-serif text-lg font-bold text-stone-900">Your basket is empty</h4>
+        <p class="text-xs text-stone-600 max-w-xs mx-auto">
+          Add some stone-ground sambar powder, pure groundnut oil, or mouthwatering garlic thokku to get started!
+        </p>
+        <button id="start-shopping-btn" class="mt-2 px-5 py-2.5 bg-terracotta-700 hover:bg-terracotta-800 text-white rounded-xl text-xs font-bold transition-all shadow-md">
+          Explore Products
+        </button>
+      </div>
+
+      <!-- Checkout Details Form (Shown only if cart has items) -->
+      <div id="checkout-form-section" class="border-t border-stone-200 pt-5 space-y-4 hidden">
+        <div class="flex items-center justify-between">
+          <h4 class="font-serif text-base font-bold text-stone-900">Customer &amp; Delivery Details</h4>
+          <span class="text-[11px] text-terracotta-700 font-semibold">*Required for WhatsApp</span>
+        </div>
+
+        <div class="space-y-3 text-xs">
+          <!-- Customer Name -->
+          <div>
+            <label for="cust-name" class="block font-semibold text-stone-700 mb-1">Your Full Name <span class="text-red-500">*</span></label>
+            <input type="text" id="cust-name" placeholder="e.g. Priya Ramesh" class="w-full bg-white border border-stone-200 rounded-lg px-3 py-2 text-stone-900 text-xs focus:ring-1 focus:ring-terracotta-600 focus:outline-hidden" />
+          </div>
+
+          <!-- Phone Number -->
+          <div>
+            <label for="cust-phone" class="block font-semibold text-stone-700 mb-1">WhatsApp Phone Number <span class="text-red-500">*</span></label>
+            <div class="flex">
+              <span class="inline-flex items-center px-2.5 rounded-l-lg border border-r-0 border-stone-200 bg-stone-50 text-stone-600 font-mono text-xs">+91</span>
+              <input type="tel" id="cust-phone" placeholder="9876543210" maxlength="10" class="w-full bg-white border border-stone-200 rounded-r-lg px-3 py-2 text-stone-900 text-xs focus:ring-1 focus:ring-terracotta-600 focus:outline-hidden" />
+            </div>
+          </div>
+
+          <!-- Delivery Method Selection -->
+          <div>
+            <label class="block font-semibold text-stone-700 mb-1">Delivery Method <span class="text-red-500">*</span></label>
+            <div class="grid grid-cols-2 gap-2">
+              <label class="flex items-center gap-2 p-2.5 rounded-lg border border-terracotta-600 bg-terracotta-50/50 cursor-pointer transition-all" id="label-delivery-home">
+                <input type="radio" name="delivery_type" value="home" checked class="text-terracotta-700 focus:ring-terracotta-600" id="radio-home" />
+                <div>
+                  <p class="font-bold text-stone-900 text-xs">Home Delivery</p>
+                  <p class="text-[10px] text-stone-500" id="home-fee-label">₹40 (Free &gt;₹700)</p>
+                </div>
+              </label>
+
+              <label class="flex items-center gap-2 p-2.5 rounded-lg border border-stone-200 bg-white hover:bg-stone-50 cursor-pointer transition-all" id="label-delivery-pickup">
+                <input type="radio" name="delivery_type" value="pickup" class="text-terracotta-700 focus:ring-terracotta-600" id="radio-pickup" />
+                <div>
+                  <p class="font-bold text-stone-900 text-xs">Kitchen Pickup</p>
+                  <p class="text-[10px] text-stone-500">Mylapore (FREE)</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Delivery Address -->
+          <div id="address-container">
+            <label for="cust-address" class="block font-semibold text-stone-700 mb-1">Delivery Address &amp; Landmark <span class="text-red-500">*</span></label>
+            <textarea id="cust-address" rows="2" placeholder="House/Flat No, Apartment name, Street, Landmark, City &amp; PIN..." class="w-full bg-white border border-stone-200 rounded-lg px-3 py-2 text-stone-900 text-xs focus:ring-1 focus:ring-terracotta-600 focus:outline-hidden"></textarea>
+          </div>
+
+          <!-- Optional Notes -->
+          <div>
+            <label for="cust-notes" class="block font-semibold text-stone-700 mb-1">Special Notes / Preferences (Optional)</label>
+            <input type="text" id="cust-notes" placeholder="e.g. Mild spice, pack oils separately, call before delivery" class="w-full bg-white border border-stone-200 rounded-lg px-3 py-2 text-stone-900 text-xs focus:ring-1 focus:ring-terracotta-600 focus:outline-hidden" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Drawer Footer (Bill Breakdown & WhatsApp Order Button) -->
+    <div id="cart-footer-section" class="p-4 sm:p-5 border-t border-stone-200 bg-white space-y-3 hidden">
+      
+      <!-- Price Breakdown -->
+      <div class="space-y-1.5 text-xs text-stone-600">
+        <div class="flex justify-between">
+          <span>Items Subtotal:</span>
+          <span id="bill-subtotal" class="font-semibold text-stone-900">₹0</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Delivery Charge:</span>
+          <span id="bill-delivery" class="font-semibold text-stone-900">₹40</span>
+        </div>
+        <div class="flex justify-between text-base font-bold text-stone-900 pt-2 border-t border-stone-100">
+          <span>Grand Total:</span>
+          <span id="bill-total" class="text-terracotta-700 font-serif text-lg">₹0</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="space-y-2 pt-1">
+        <!-- Main WhatsApp Order CTA -->
+        <button id="checkout-whatsapp-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-600/25 active:scale-98 transition-all text-sm">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Place Order on WhatsApp</span>
+        </button>
+
+        <!-- Secondary options: Copy details or Clear -->
+        <div class="flex items-center justify-between text-[11px] text-stone-500 pt-1">
+          <button id="copy-order-btn" class="hover:text-stone-900 flex items-center gap-1">
+            <i class="fa-regular fa-copy"></i> Copy Order Summary
+          </button>
+          <button id="clear-cart-btn" class="hover:text-red-700 text-stone-400">
+            Clear Basket
+          </button>
+        </div>
+      </div>
+
+      <p class="text-[10px] text-center text-stone-400 leading-tight">
+        Clicking opens WhatsApp with your pre-filled cart. You can confirm delivery time &amp; pay via UPI QR upon receipt.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- PRODUCT QUICK VIEW MODAL (RECIPE / INGREDIENTS / HERITAGE) -->
+  <div id="product-modal" class="fixed inset-0 bg-stone-950/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-stone-200 animate-scale-up">
+      <div class="relative h-48 sm:h-56 bg-stone-100">
+        <img id="modal-img" src="" alt="" class="w-full h-full object-cover" />
+        <button id="close-modal-btn" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="absolute bottom-3 left-3 bg-terracotta-700/90 text-amber-200 text-xs font-bold px-2.5 py-1 rounded-sm">
+          <span id="modal-freshness">Fresh Batch</span>
+        </div>
+      </div>
+
+      <div class="p-5 sm:p-6 space-y-4">
+        <div>
+          <h3 id="modal-title" class="font-serif text-xl sm:text-2xl font-bold text-stone-900"></h3>
+          <p id="modal-subtitle" class="text-xs text-terracotta-700 font-semibold mt-0.5"></p>
+        </div>
+
+        <p id="modal-desc" class="text-xs sm:text-sm text-stone-600 leading-relaxed"></p>
+
+        <!-- Ingredients & Traditional Process Badges -->
+        <div class="space-y-2 pt-2 border-t border-stone-100">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-stone-800">Ingredients &amp; Process</h4>
+          <p id="modal-ingredients" class="text-xs text-stone-600 bg-amber-50/70 p-3 rounded-lg border border-amber-200/50"></p>
+        </div>
+
+        <!-- Grandma's Culinary Tip -->
+        <div class="space-y-1 bg-leaf-50 p-3 rounded-lg border border-leaf-200/50">
+          <h4 class="text-xs font-bold text-leaf-900 flex items-center gap-1.5">
+            <i class="fa-solid fa-lightbulb text-amber-500"></i> Culinary Tip from Our Kitchen
+          </h4>
+          <p id="modal-tip" class="text-xs text-leaf-800"></p>
+        </div>
+
+        <div class="pt-3 flex items-center justify-between border-t border-stone-100">
+          <div>
+            <span class="text-[11px] text-stone-500">Price Starts from</span>
+            <p id="modal-price" class="font-serif text-xl font-bold text-terracotta-700"></p>
+          </div>
+          <button id="modal-add-btn" class="bg-terracotta-700 hover:bg-terracotta-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition-all shadow-md">
+            Add to Order Basket
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GOOGLE SHEETS WEBHOOK SETTINGS MODAL (FOR STORE OWNER / ADMIN) -->
+  <div id="webhook-modal" class="fixed inset-0 bg-stone-950/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-stone-200 space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-table text-emerald-600 text-lg"></i>
+          <h3 class="font-serif text-lg font-bold text-stone-900">Google Sheets Webhook</h3>
+        </div>
+        <button id="close-webhook-modal-btn" class="text-stone-400 hover:text-stone-700">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <p class="text-xs text-stone-600 leading-relaxed">
+        Connect orders automatically to your Google Spreadsheet via Google Apps Script Webhook URL. Orders will log seamlessly whenever a customer presses "Order on WhatsApp".
+      </p>
+
+      <div>
+        <label for="webhook-url-input" class="block text-xs font-semibold text-stone-700 mb-1">Apps Script Webhook Endpoint URL:</label>
+        <input type="url" id="webhook-url-input" placeholder="https://script.google.com/macros/s/.../exec" class="w-full bg-stone-50 border border-stone-200 rounded-lg p-2.5 text-xs font-mono text-stone-900 focus:ring-1 focus:ring-emerald-600 focus:outline-hidden" />
+        <p class="text-[10px] text-stone-400 mt-1">Leave empty to use WhatsApp only. Value is saved in browser storage.</p>
+      </div>
+
+      <div class="bg-amber-50 p-3 rounded-lg border border-amber-200 text-[11px] text-amber-900 space-y-1">
+        <p class="font-bold">Default Webhook Variable in Code:</p>
+        <p class="font-mono text-[10px] bg-white p-1 rounded border border-amber-300">const GOOGLE_SHEETS_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbx657fO4wHuJGejkA-_J1Os0V_oA8bHT7WW7BwD6ZzMJOmO9OOVbNMKHVNJQnIAunzngQ/exec";</p>
+      </div>
+
+      <div class="flex items-center justify-end gap-2 pt-2">
+        <button id="cancel-webhook-btn" class="px-3 py-1.5 text-xs text-stone-600 hover:text-stone-900">Cancel</button>
+        <button id="save-webhook-btn" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-lg transition-colors">
+          Save Settings
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed bottom-6 left-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- VANILLA JAVASCRIPT APPLICATION LOGIC -->
+  <script>
+    /**
+     * TRADITIONAL ORGANICS — APPLICATION STATE & LOGIC
+     * Pure Vanilla JavaScript implementation
+     */
+
+    // 1. CONFIGURATION
+    // Google Sheets Webhook URL: Set to empty string by default as required.
+    // Can also be configured via localStorage or the admin modal.
+    let GOOGLE_SHEETS_WEBHOOK_URL = localStorage.getItem("TRADITIONAL_SHEETS_WEBHOOK") || "";
+    const WHATSAPP_PHONE_NUMBER = "919876543210"; // Official order line
+    const FREE_DELIVERY_THRESHOLD = 700; // INR
+    const STANDARD_DELIVERY_FEE = 40; // INR
+
+    // 2. PRODUCT CATALOG DATA WITH INDIAN CONTEXT & HIGH-RES PHOTOS
+    const PRODUCTS = [
+      // CATEGORY: MASALA POWDERS
+      {
+        id: "sambar-powder",
+        name: "Grandma's Sambar Powder",
+        tamilName: "பாரம்பரிய சாம்பார் பொடி",
+        category: "masala",
+        image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Freshly Ground This Week",
+        desc: "Sun-dried Guntur chillies, Salem turmeric, roasted chana dal, coriander seeds, and a touch of roasted fenugreek & cumin for authentic South Indian home sambar.",
+        ingredients: "Guntur Red Chillies, Coriander Seeds, Salem Turmeric, Bengal Gram, Toor Dal, Cumin, Pepper, Fenugreek, Asafoetida (Hing).",
+        culinaryTip: "Add 1.5 teaspoons to your tamarind dal water along with drumstick or shallots. Temper with mustard and curry leaves in pure gingelly oil.",
+        variants: [
+          { weight: "250g", price: 120 },
+          { weight: "500g", price: 230 },
+          { weight: "1 kg", price: 440 }
+        ],
+        badge: "Bestseller"
+      },
+      {
+        id: "rasam-powder",
+        name: "Traditional Rasam Powder",
+        tamilName: "மிளகு சீரக ரசப் பொடி",
+        category: "masala",
+        image: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Slow Roasted Batch #18",
+        desc: "Coarsely pounded whole Tellicherry black pepper, hand-roasted cumin, dry ginger (sukku), and coriander. Soothing for the throat and gentle on digestion.",
+        ingredients: "Malabar Black Pepper, Cumin Seeds, Coriander, Sukku (Dry Ginger), Red Chillies, Curry Leaves, Turmeric.",
+        culinaryTip: "Simmer crushed tomatoes and garlic in tamarind water. Add 1 spoon of Rasam Powder just 2 minutes before switching off flame so the volatile aromas remain fresh.",
+        variants: [
+          { weight: "250g", price: 110 },
+          { weight: "500g", price: 210 },
+          { weight: "1 kg", price: 400 }
+        ],
+        badge: "Digestive Care"
+      },
+      {
+        id: "curry-masala",
+        name: "Mutton / Chicken Curry Masala",
+        tamilName: "செட்டிநாடு கறி மசாலா",
+        category: "masala",
+        image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Stone-Ground Batch #24",
+        desc: "Authentic Chettinad blend featuring kalpasi (black stone flower), star anise, mace, fennel, and whole roasted spices for rich aromatic non-veg & veg gravies.",
+        ingredients: "Kalpasi, Star Anise, Cinnamon, Cloves, Cardamom, Fennel Seeds, Red Chillies, Coriander, Black Pepper, Cumin, Poppy Seeds.",
+        culinaryTip: "Brown shallots and ginger-garlic paste in hot groundnut oil before stirring in 2 tablespoons of this masala. Works wonders for mushroom and paneer curries too.",
+        variants: [
+          { weight: "250g", price: 150 },
+          { weight: "500g", price: 290 },
+          { weight: "1 kg", price: 560 }
+        ],
+        badge: "Chettinad Special"
+      },
+      {
+        id: "turmeric-powder",
+        name: "Pure Salem Turmeric Powder",
+        tamilName: "சேலம் விரலி மஞ்சள் பொடி",
+        category: "masala",
+        image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "High Curcumin (5.2%)",
+        desc: "Made from unpolished Salem virali turmeric rhizomes. Free from artificial yellow dyes, chalk powder, or lead chromate. Divine golden color & medicinal potency.",
+        ingredients: "100% Pure Sun-Dried Salem Turmeric Rhizomes (Zero Additives).",
+        culinaryTip: "Half a teaspoon in warm golden milk with a pinch of fresh black pepper boosts immunity. Ideal for daily temple & home cooking.",
+        variants: [
+          { weight: "250g", price: 90 },
+          { weight: "500g", price: 170 },
+          { weight: "1 kg", price: 320 }
+        ],
+        badge: "Medicinal Grade"
+      },
+      {
+        id: "chilli-powder",
+        name: "Pure Guntur Red Chilli Powder",
+        tamilName: "குண்டூர் மிளகாய்த் தூள்",
+        category: "masala",
+        image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Stem-Removed & Sun-Dried",
+        desc: "Balanced blend of fiery Guntur chillies and deep-red Byadagi/Kashmiri chillies. Cleaned stems, washed and sun-dried. Never contains added food colors.",
+        ingredients: "Hand-Picked Sun-Dried Guntur & Byadagi Red Chillies.",
+        culinaryTip: "Delivers deep appetizing natural red color without chemical heat or acidity.",
+        variants: [
+          { weight: "250g", price: 95 },
+          { weight: "500g", price: 180 },
+          { weight: "1 kg", price: 340 }
+        ],
+        badge: "Natural Color"
+      },
+      {
+        id: "idli-podi",
+        name: "Traditional Idli Podi (Gunpowder)",
+        tamilName: "ஆந்திர காரப் பொடி / இட்லி பொடி",
+        category: "masala",
+        image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Crisp Roasted Lentils",
+        desc: "Roasted urad dal, chana dal, country black sesame, crisp curry leaves, and a generous dash of hing. Coarse texture that crunches under the tongue.",
+        ingredients: "Urad Dal, Bengal Gram, Black Sesame, Kashmiri Chillies, Curry Leaves, Asafoetida, Rock Salt.",
+        culinaryTip: "Take a heap of podi on your hot idli plate, make a small well in the center, and pour 2 spoons of warm Mara Chekku Gingelly oil. Irresistible!",
+        variants: [
+          { weight: "250g", price: 110 },
+          { weight: "500g", price: 210 },
+          { weight: "1 kg", price: 400 }
+        ],
+        badge: "Must Try"
+      },
+
+      // CATEGORY: WOOD-PRESSED / COLD-PRESSED OILS
+      {
+        id: "groundnut-oil",
+        name: "Pure Cold-Pressed Groundnut Oil",
+        tamilName: "மரச்செக்கு கடலை எண்ணெய்",
+        category: "oil",
+        image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Wood-Pressed Yesterday",
+        desc: "Crushed in traditional Vagai wood expellers using handpicked country peanuts. Retains natural nutty aroma, high smoke point, and natural plant sterols.",
+        ingredients: "100% Native Wood-Pressed Peanuts (Unrefined, Unfiltered, Chemical Solvent Free).",
+        culinaryTip: "Ideal for deep frying snacks (murukku, vadai) and daily gravies. Never produces greasy chemical odors.",
+        variants: [
+          { weight: "500ml", price: 130 },
+          { weight: "1 Liter", price: 240 },
+          { weight: "5 Liters", price: 1150 }
+        ],
+        badge: "Kitchen Staple"
+      },
+      {
+        id: "sesame-oil",
+        name: "Wood-Pressed Sesame / Gingelly Oil",
+        tamilName: "மரச்செக்கு நல்லெண்ணெய்",
+        category: "oil",
+        image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Sesame + Palm Jaggery",
+        desc: "Pure black country sesame seeds crushed with Karupatti (natural palm jaggery) to remove bitterness and impart silky golden warmth. Unrefined and nutrient-rich.",
+        ingredients: "Black Sesame Seeds, Organic Palm Jaggery (Karupatti).",
+        culinaryTip: "Essential for tempering rasam, vatha kuzhambu, mixing with idli podi, and traditional oil massages.",
+        variants: [
+          { weight: "500ml", price: 200 },
+          { weight: "1 Liter", price: 380 },
+          { weight: "5 Liters", price: 1850 }
+        ],
+        badge: "Ayurvedic Heritage"
+      },
+      {
+        id: "coconut-oil",
+        name: "Extra Virgin Coconut Oil (Mara Chekku)",
+        tamilName: "மரச்செக்கு தேங்காய் எண்ணெய்",
+        category: "oil",
+        image: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Sulfur-Free Sun-Dried Copra",
+        desc: "Cold pressed from naturally sun-dried copra (sulfur-free). Crystalline sweet aroma of fresh coastal coconuts. Unbleached, unrefined, and raw.",
+        ingredients: "100% Naturally Sun-Dried Edible Coconut Copra.",
+        culinaryTip: "Perfect for Avial, Kerala curries, bullet coffee, and hair nourishment. Solidifies naturally in cooler weather.",
+        variants: [
+          { weight: "500ml", price: 170 },
+          { weight: "1 Liter", price: 320 },
+          { weight: "5 Liters", price: 1550 }
+        ],
+        badge: "Sulfur Free"
+      },
+      {
+        id: "mustard-oil",
+        name: "Cold-Pressed Mustard Oil",
+        tamilName: "பாரம்பரிய கடுகு எண்ணெய்",
+        category: "oil",
+        image: "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Pungent & Unrefined",
+        desc: "Naturally pungent cold pressed Indian brown mustard seeds. Rich in allyl isothiocyanate and heart-healthy omega acids. Traditional base for authentic pickles.",
+        ingredients: "100% Brown Mustard Seeds (Kachi Ghani Wood Pressed).",
+        culinaryTip: "Heat until smoking point before frying to temper its bold pungency. Best for robust curries and preserving pickles.",
+        variants: [
+          { weight: "500ml", price: 140 },
+          { weight: "1 Liter", price: 260 }
+        ],
+        badge: "Kachi Ghani"
+      },
+
+      // CATEGORY: HOME PICKLES & THOKKU
+      {
+        id: "mango-pickle",
+        name: "Traditional Cut Mango Pickle",
+        tamilName: "நாட்டு மாங்காய் ஊறுகாய்",
+        category: "pickle",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Matured in Chekku Gingelly Oil",
+        desc: "Crisp pieces of sour country raw mango cured with stone-ground mustard, fenugreek, Guntur red chillies, and generous Mara Chekku gingelly oil in ceramic jars.",
+        ingredients: "Country Green Mango, Stone-Ground Mustard, Fenugreek, Red Chilli Powder, Rock Salt, Wood-Pressed Gingelly Oil, Hing.",
+        culinaryTip: "Pair with piping hot curd rice or sambar rice with roasted papad for pure heaven.",
+        variants: [
+          { weight: "300g", price: 140 },
+          { weight: "500g", price: 220 },
+          { weight: "1 kg", price: 420 }
+        ],
+        badge: "Ceramic Aged"
+      },
+      {
+        id: "garlic-thokku",
+        name: "Simmered Garlic Thokku (Poondu Thokku)",
+        tamilName: "நாட்டு பூண்டு தொக்கு",
+        category: "pickle",
+        image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Slow-Simmered for 4 Hours",
+        desc: "Hand-peeled small country garlic simmered low and slow in tangy tamarind paste, jaggery, roasted fenugreek, and cold-pressed gingelly oil until tender and jammy.",
+        ingredients: "Desi Country Garlic, Tamarind Pulp, Karupatti (Jaggery), Red Chilli, Mustard, Fenugreek, Pure Gingelly Oil, Rock Salt.",
+        culinaryTip: "A delicious and gut-friendly accompaniment with soft idlis, dosas, chapathis, or hot ghee rice.",
+        variants: [
+          { weight: "300g", price: 160 },
+          { weight: "500g", price: 250 },
+          { weight: "1 kg", price: 480 }
+        ],
+        badge: "Home Recipe"
+      },
+      {
+        id: "tomato-thokku",
+        name: "Country Tomato Thokku",
+        tamilName: "நாட்டு தக்காளி தொக்கு",
+        category: "pickle",
+        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Sun-Ripened Desi Tomatoes",
+        desc: "Tangy country sour tomatoes cooked down with whole spices and cold-pressed sesame oil. Rich, glossy, and bursting with traditional Indian flavors.",
+        ingredients: "Desi Country Tomatoes, Gingelly Oil, Red Chillies, Mustard, Fenugreek, Turmeric, Asafoetida, Rock Salt.",
+        culinaryTip: "Spread over crispy dosas, roll into rotis for lunch boxes, or stir into plain rice as a quick Tomato Rice.",
+        variants: [
+          { weight: "300g", price: 130 },
+          { weight: "500g", price: 210 },
+          { weight: "1 kg", price: 390 }
+        ],
+        badge: "Kids Favorite"
+      },
+      {
+        id: "citron-pickle",
+        name: "Traditional Citron Pickle (Narthangai)",
+        tamilName: "நாட்டு நார்த்தங்காய் ஊறுகாய்",
+        category: "pickle",
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+        freshnessTag: "Aged 30 Days in Salt Brine",
+        desc: "Medicinal wild citron cured in rock salt brine in earthenware pots, then tempered with roasted fenugreek and gingelly oil. Renowned remedy for digestive health.",
+        ingredients: "Country Citron (Narthangai), Rock Salt, Red Chilli Powder, Roasted Fenugreek, Gingelly Oil.",
+        culinaryTip: "The classic comforting companion for soft curd rice on warm afternoons or during recovery from colds.",
+        variants: [
+          { weight: "300g", price: 140 },
+          { weight: "500g", price: 220 },
+          { weight: "1 kg", price: 410 }
+        ],
+        badge: "Digestive Aid"
+      }
+    ];
+
+    // 3. CART STATE MANAGEMENT
+    // Array of { productId, weight, price, quantity, name, image }
+    let cart = [];
+
+    // Load cart from localStorage if available
+    try {
+      const savedCart = localStorage.getItem("TRADITIONAL_ORGANICS_CART");
+      if (savedCart) {
+        cart = JSON.parse(savedCart);
+      }
+    } catch (e) {
+      console.warn("Could not load cart from storage", e);
+    }
+
+    function saveCart() {
+      try {
+        localStorage.setItem("TRADITIONAL_ORGANICS_CART", JSON.stringify(cart));
+      } catch (e) {
+        console.warn("Could not save cart", e);
+      }
+      updateCartUI();
+    }
+
+    // 4. UI ELEMENTS
+    const productGrid = document.getElementById("product-grid");
+    const cartDrawer = document.getElementById("cart-drawer");
+    const cartOverlay = document.getElementById("cart-overlay");
+    const cartCounter = document.getElementById("cart-counter");
+    const floatingCartBadge = document.getElementById("floating-cart-badge");
+    const headerCartTotal = document.getElementById("header-cart-total");
+    const floatingCartTotal = document.getElementById("floating-cart-total");
+    const cartItemsList = document.getElementById("cart-items-list");
+    const emptyCartView = document.getElementById("empty-cart-view");
+    const checkoutFormSection = document.getElementById("checkout-form-section");
+    const cartFooterSection = document.getElementById("cart-footer-section");
+    const billSubtotal = document.getElementById("bill-subtotal");
+    const billDelivery = document.getElementById("bill-delivery");
+    const billTotal = document.getElementById("bill-total");
+    const cartItemCountText = document.getElementById("cart-item-count-text");
+    const freeDeliveryText = document.getElementById("free-delivery-text");
+    const deliveryStatusTag = document.getElementById("delivery-status-tag");
+    const toastContainer = document.getElementById("toast-container");
+
+    // Modal elements
+    const productModal = document.getElementById("product-modal");
+    const modalImg = document.getElementById("modal-img");
+    const modalTitle = document.getElementById("modal-title");
+    const modalSubtitle = document.getElementById("modal-subtitle");
+    const modalDesc = document.getElementById("modal-desc");
+    const modalIngredients = document.getElementById("modal-ingredients");
+    const modalTip = document.getElementById("modal-tip");
+    const modalPrice = document.getElementById("modal-price");
+    const modalFreshness = document.getElementById("modal-freshness");
+    const modalAddBtn = document.getElementById("modal-add-btn");
+    let currentModalProduct = null;
+
+    // Webhook Modal elements
+    const webhookModal = document.getElementById("webhook-modal");
+    const webhookUrlInput = document.getElementById("webhook-url-input");
+
+    // 5. RENDER PRODUCT CATALOG
+    let activeCategory = "all";
+    let searchQuery = "";
+
+    function renderProducts() {
+      productGrid.innerHTML = "";
+      
+      const filtered = PRODUCTS.filter(p => {
+        const matchesCategory = activeCategory === "all" || p.category === activeCategory;
+        const matchesSearch = searchQuery === "" || 
+          p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+          p.tamilName.includes(searchQuery) ||
+          p.desc.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesCategory && matchesSearch;
+      });
+
+      const emptyResults = document.getElementById("empty-results");
+      if (filtered.length === 0) {
+        emptyResults.classList.remove("hidden");
+        return;
+      } else {
+        emptyResults.classList.add("hidden");
+      }
+
+      filtered.forEach(product => {
+        // Default to first variant
+        const defaultVariant = product.variants[0];
+        
+        // Category anchor helpers for IDs
+        let anchorId = "";
+        if (product.id === "sambar-powder") anchorId = 'id="masalas"';
+        if (product.id === "groundnut-oil") anchorId = 'id="oils"';
+        if (product.id === "mango-pickle") anchorId = 'id="pickles"';
+
+        const card = document.createElement("div");
+        card.className = "bg-white rounded-2xl overflow-hidden border border-amber-200/80 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col group";
+        if (anchorId) card.id = anchorId.replace('id="', '').replace('"', '');
+
+        card.innerHTML = `
+          <!-- Image Box with Badge -->
+          <div class="relative h-48 sm:h-52 bg-amber-50 overflow-hidden cursor-pointer" onclick="openProductModal('${product.id}')">
+            <img 
+              src="${product.image}" 
+              alt="${product.name}" 
+              loading="lazy" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent opacity-80"></div>
+            
+            <!-- Category & Badge -->
+            <div class="absolute top-3 left-3 flex flex-wrap gap-1.5 items-center">
+              <span class="bg-terracotta-700/95 text-amber-100 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-sm backdrop-blur-xs">
+                ${product.badge}
+              </span>
+            </div>
+
+            <!-- Freshness Tag Pill -->
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+              <span class="inline-flex items-center gap-1.5 bg-black/50 backdrop-blur-xs px-2 py-0.5 rounded-md text-[11px] text-amber-200 font-medium">
+                <i class="fa-solid fa-leaf text-emerald-400"></i> ${product.freshnessTag}
+              </span>
+              <span class="text-[11px] text-amber-200 hover:text-white underline font-semibold flex items-center gap-1">
+                Details <i class="fa-solid fa-chevron-right text-[9px]"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Product Details Body -->
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="font-serif text-lg font-bold text-stone-900 group-hover:text-terracotta-700 transition-colors leading-snug cursor-pointer" onclick="openProductModal('${product.id}')">
+                  ${product.name}
+                </h3>
+              </div>
+              <p class="text-[11px] font-semibold text-terracotta-800 mt-0.5">${product.tamilName}</p>
+              
+              <p class="text-xs text-stone-600 line-clamp-2 mt-2 leading-relaxed">
+                ${product.desc}
+              </p>
+            </div>
+
+            <!-- Weight Selection & Dynamic Price -->
+            <div class="space-y-3 pt-3 border-t border-amber-100">
+              
+              <!-- Weight Variant Dropdown -->
+              <div class="flex items-center justify-between gap-2">
+                <label for="select-${product.id}" class="text-xs font-semibold text-stone-600">Select Qty:</label>
+                <div class="relative flex-1 max-w-[150px]">
+                  <select 
+                    id="select-${product.id}" 
+                    data-product-id="${product.id}" 
+                    class="variant-select w-full bg-stone-50 border border-stone-200 rounded-lg px-2.5 py-1.5 text-xs font-semibold text-stone-800 focus:outline-hidden focus:border-terracotta-600 cursor-pointer"
+                  >
+                    ${product.variants.map((v, i) => `
+                      <option value="${v.weight}" data-price="${v.price}" ${i === 0 ? "selected" : ""}>
+                        ${v.weight} — ₹${v.price}
+                      </option>
+                    `).join('')}
+                  </select>
+                </div>
+              </div>
+
+              <!-- Price & Add To Basket Action -->
+              <div class="flex items-center justify-between pt-1">
+                <div>
+                  <span class="text-[10px] text-stone-500 uppercase tracking-wider block">Price</span>
+                  <div class="flex items-baseline gap-1">
+                    <span id="price-display-${product.id}" class="font-serif text-xl font-bold text-terracotta-800">
+                      ₹${defaultVariant.price}
+                    </span>
+                    <span id="unit-display-${product.id}" class="text-[10px] text-stone-500 font-medium">/ ${defaultVariant.weight}</span>
+                  </div>
+                </div>
+
+                <button 
+                  data-product-id="${product.id}"
+                  class="add-to-cart-btn inline-flex items-center gap-1.5 bg-terracotta-700 hover:bg-terracotta-800 active:scale-95 text-white text-xs font-bold px-3.5 py-2.5 rounded-xl shadow-md shadow-terracotta-700/20 transition-all"
+                >
+                  <i class="fa-solid fa-plus text-[11px]"></i>
+                  <span>Add</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        `;
+
+        productGrid.appendChild(card);
+      });
+
+      // Attach event listeners for dynamic price updating on select change
+      document.querySelectorAll(".variant-select").forEach(select => {
+        select.addEventListener("change", (e) => {
+          const productId = e.target.getAttribute("data-product-id");
+          const selectedOption = e.target.options[e.target.selectedIndex];
+          const newPrice = selectedOption.getAttribute("data-price");
+          const newWeight = selectedOption.value;
+
+          const priceEl = document.getElementById(`price-display-${productId}`);
+          const unitEl = document.getElementById(`unit-display-${productId}`);
+          if (priceEl) priceEl.textContent = `₹${newPrice}`;
+          if (unitEl) unitEl.textContent = `/ ${newWeight}`;
+        });
+      });
+
+      // Attach Add To Cart buttons
+      document.querySelectorAll(".add-to-cart-btn").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+          const button = e.currentTarget;
+          const productId = button.getAttribute("data-product-id");
+          const product = PRODUCTS.find(p => p.id === productId);
+          if (!product) return;
+
+          const selectEl = document.getElementById(`select-${productId}`);
+          const selectedOption = selectEl.options[selectEl.selectedIndex];
+          const weight = selectedOption.value;
+          const price = parseFloat(selectedOption.getAttribute("data-price"));
+
+          addToCart(product, weight, price);
+
+          // Visual feedback on button
+          const originalHTML = button.innerHTML;
+          button.classList.remove("bg-terracotta-700");
+          button.classList.add("bg-emerald-600");
+          button.innerHTML = `<i class="fa-solid fa-check text-[11px]"></i><span>Added</span>`;
+          setTimeout(() => {
+            button.classList.remove("bg-emerald-600");
+            button.classList.add("bg-terracotta-700");
+            button.innerHTML = originalHTML;
+          }, 1200);
+        });
+      });
+    }
+
+    // 6. CART MANIPULATION
+    function addToCart(product, weight, price) {
+      // Check if identical product + weight already in cart
+      const existing = cart.find(item => item.productId === product.id && item.weight === weight);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({
+          productId: product.id,
+          name: product.name,
+          tamilName: product.tamilName,
+          image: product.image,
+          weight: weight,
+          price: price,
+          quantity: 1
+        });
+      }
+
+      saveCart();
+      showToast(`Added ${product.name} (${weight}) to your basket!`);
+    }
+
+    function updateItemQuantity(productId, weight, delta) {
+      const itemIndex = cart.findIndex(item => item.productId === productId && item.weight === weight);
+      if (itemIndex > -1) {
+        cart[itemIndex].quantity += delta;
+        if (cart[itemIndex].quantity <= 0) {
+          cart.splice(itemIndex, 1);
+        }
+      }
+      saveCart();
+    }
+
+    function removeItemFromCart(productId, weight) {
+      cart = cart.filter(item => !(item.productId === productId && item.weight === weight));
+      saveCart();
+      showToast("Item removed from basket");
+    }
+
+    function clearCart() {
+      if (confirm("Are you sure you want to clear all items in your basket?")) {
+        cart = [];
+        saveCart();
+        showToast("Basket cleared");
+      }
+    }
+
+    // 7. CART UI UPDATES & CALCULATIONS
+    function updateCartUI() {
+      const totalItemCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+      const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+      // Determine delivery fee
+      const deliveryTypeRadio = document.querySelector('input[name="delivery_type"]:checked');
+      const isPickup = deliveryTypeRadio && deliveryTypeRadio.value === "pickup";
+      
+      let deliveryFee = 0;
+      if (!isPickup && totalItemCount > 0) {
+        deliveryFee = subtotal >= FREE_DELIVERY_THRESHOLD ? 0 : STANDARD_DELIVERY_FEE;
+      }
+
+      const grandTotal = subtotal + deliveryFee;
+
+      // Update counters & totals
+      cartCounter.textContent = totalItemCount;
+      floatingCartBadge.textContent = totalItemCount;
+      headerCartTotal.textContent = `₹${subtotal}`;
+      floatingCartTotal.textContent = `₹${subtotal}`;
+      cartItemCountText.textContent = `${totalItemCount} ${totalItemCount === 1 ? 'item' : 'items'}`;
+
+      billSubtotal.textContent = `₹${subtotal}`;
+      billDelivery.textContent = deliveryFee === 0 ? "FREE" : `₹${deliveryFee}`;
+      billTotal.textContent = `₹${grandTotal}`;
+
+      // Free Delivery Banner status
+      if (isPickup) {
+        freeDeliveryText.innerHTML = `<i class="fa-solid fa-store text-emerald-600"></i> Store pickup selected (No delivery charge)`;
+        deliveryStatusTag.textContent = "Pickup";
+        deliveryStatusTag.className = "text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full";
+      } else if (subtotal >= FREE_DELIVERY_THRESHOLD) {
+        freeDeliveryText.innerHTML = `<i class="fa-solid fa-gift text-emerald-600"></i> Congratulations! You unlocked FREE City Delivery!`;
+        deliveryStatusTag.textContent = "Free Delivery";
+        deliveryStatusTag.className = "text-[10px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full";
+      } else {
+        const remaining = FREE_DELIVERY_THRESHOLD - subtotal;
+        freeDeliveryText.innerHTML = `<i class="fa-solid fa-truck text-terracotta-600"></i> Add ₹${remaining} more for FREE Local Delivery`;
+        deliveryStatusTag.textContent = `Standard (₹${STANDARD_DELIVERY_FEE})`;
+        deliveryStatusTag.className = "text-[10px] font-bold text-amber-800 bg-amber-200/80 px-2 py-0.5 rounded-full";
+      }
+
+      // Render Item List
+      if (cart.length === 0) {
+        emptyCartView.classList.remove("hidden");
+        checkoutFormSection.classList.add("hidden");
+        cartFooterSection.classList.add("hidden");
+        cartItemsList.innerHTML = "";
+      } else {
+        emptyCartView.classList.add("hidden");
+        checkoutFormSection.classList.remove("hidden");
+        cartFooterSection.classList.remove("hidden");
+
+        cartItemsList.innerHTML = cart.map(item => `
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-white border border-stone-200 shadow-2xs">
+            <img src="${item.image}" alt="${item.name}" class="w-14 h-14 rounded-lg object-cover shrink-0" />
+            
+            <div class="flex-1 min-w-0">
+              <h5 class="text-xs font-bold text-stone-900 truncate">${item.name}</h5>
+              <div class="flex items-center gap-2 text-[11px] text-stone-500 mt-0.5">
+                <span class="font-medium text-terracotta-800 bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200">${item.weight}</span>
+                <span>·</span>
+                <span>₹${item.price} each</span>
+              </div>
+              <div class="text-xs font-bold text-stone-900 mt-1">
+                ₹${item.price * item.quantity}
+              </div>
+            </div>
+
+            <!-- Stepper Controls -->
+            <div class="flex flex-col items-end gap-1.5 shrink-0">
+              <div class="flex items-center border border-stone-200 rounded-lg bg-stone-50 overflow-hidden">
+                <button 
+                  onclick="updateItemQuantity('${item.productId}', '${item.weight}', -1)"
+                  class="w-6 h-6 flex items-center justify-center text-xs text-stone-700 hover:bg-stone-200 transition-colors"
+                  aria-label="Decrease quantity"
+                >−</button>
+                <span class="w-7 text-center text-xs font-bold text-stone-900">${item.quantity}</span>
+                <button 
+                  onclick="updateItemQuantity('${item.productId}', '${item.weight}', 1)"
+                  class="w-6 h-6 flex items-center justify-center text-xs text-stone-700 hover:bg-stone-200 transition-colors"
+                  aria-label="Increase quantity"
+                >+</button>
+              </div>
+
+              <button 
+                onclick="removeItemFromCart('${item.productId}', '${item.weight}')"
+                class="text-[10px] text-stone-400 hover:text-red-600 transition-colors"
+                title="Remove item"
+              >
+                <i class="fa-regular fa-trash-can"></i> Remove
+              </button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    // 8. OPEN / CLOSE CART DRAWER
+    function openCart() {
+      cartOverlay.classList.remove("hidden");
+      setTimeout(() => {
+        cartOverlay.classList.add("opacity-100");
+      }, 10);
+      cartDrawer.classList.remove("cart-drawer-closed");
+      cartDrawer.classList.add("cart-drawer-open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeCart() {
+      cartOverlay.classList.remove("opacity-100");
+      cartDrawer.classList.remove("cart-drawer-open");
+      cartDrawer.classList.add("cart-drawer-closed");
+      setTimeout(() => {
+        cartOverlay.classList.add("hidden");
+        document.body.style.overflow = "";
+      }, 300);
+    }
+
+    // 9. PRODUCT DETAIL MODAL
+    function openProductModal(productId) {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+      currentModalProduct = product;
+
+      modalImg.src = product.image;
+      modalImg.alt = product.name;
+      modalTitle.textContent = product.name;
+      modalSubtitle.textContent = product.tamilName;
+      modalDesc.textContent = product.desc;
+      modalIngredients.textContent = product.ingredients;
+      modalTip.textContent = product.culinaryTip;
+      modalFreshness.textContent = product.freshnessTag;
+      modalPrice.textContent = `₹${product.variants[0].price} (${product.variants[0].weight})`;
+
+      productModal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeProductModal() {
+      productModal.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+
+    // 10. BACKGROUND WEBHOOK & WHATSAPP CHECKOUT
+    async function handleWhatsAppOrder() {
+      if (cart.length === 0) {
+        showToast("Your basket is empty. Please add items first!");
+        return;
+      }
+
+      const nameInput = document.getElementById("cust-name");
+      const phoneInput = document.getElementById("cust-phone");
+      const addressInput = document.getElementById("cust-address");
+      const notesInput = document.getElementById("cust-notes");
+      const deliveryRadio = document.querySelector('input[name="delivery_type"]:checked');
+
+      const name = nameInput.value.trim();
+      const phone = phoneInput.value.trim();
+      const address = addressInput.value.trim();
+      const notes = notesInput.value.trim();
+      const deliveryType = deliveryRadio ? deliveryRadio.value : "home";
+
+      // Form validation
+      if (!name) {
+        alert("Please enter your Full Name.");
+        nameInput.focus();
+        return;
+      }
+      if (!phone || phone.length < 10) {
+        alert("Please enter a valid 10-digit WhatsApp phone number.");
+        phoneInput.focus();
+        return;
+      }
+      if (deliveryType === "home" && !address) {
+        alert("Please provide your delivery address.");
+        addressInput.focus();
+        return;
+      }
+
+      // Calculations
+      const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+      const deliveryFee = deliveryType === "pickup" ? 0 : (subtotal >= FREE_DELIVERY_THRESHOLD ? 0 : STANDARD_DELIVERY_FEE);
+      const grandTotal = subtotal + deliveryFee;
+
+      // Construct Order Payload Object for Google Sheets or logging
+      const orderPayload = {
+        orderId: "TO-" + Date.now().toString().slice(-6),
+        timestamp: new Date().toISOString(),
+        customerName: name,
+        customerPhone: phone,
+        deliveryType: deliveryType === "home" ? "Local Home Delivery" : "Kitchen Store Pickup",
+        address: deliveryType === "home" ? address : "Kitchen Pickup - Mylapore",
+        notes: notes || "None",
+        items: cart.map(item => ({
+          name: item.name,
+          weight: item.weight,
+          unitPrice: item.price,
+          quantity: item.quantity,
+          total: item.price * item.quantity
+        })),
+        subtotal: subtotal,
+        deliveryFee: deliveryFee,
+        grandTotal: grandTotal
+      };
+
+      // Background Fetch to Google Sheets Webhook URL if set
+      if (GOOGLE_SHEETS_WEBHOOK_URL && GOOGLE_SHEETS_WEBHOOK_URL.trim() !== "") {
+        try {
+          fetch(GOOGLE_SHEETS_WEBHOOK_URL, {
+            method: "POST",
+            mode: "no-cors", // Standard Google Apps Script Webhook requirement
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(orderPayload)
+          }).catch(err => {
+            console.warn("Google Sheets background fetch error (non-blocking):", err);
+          });
+        } catch (e) {
+          console.warn("Could not dispatch sheets webhook:", e);
+        }
+      }
+
+      // Construct Pre-filled WhatsApp Message
+      let msg = `🌿 *NEW ORDER - TRADITIONAL ORGANICS* 🌿\n`;
+      msg += `----------------------------------------\n`;
+      msg += `👤 *Customer:* ${name}\n`;
+      msg += `📞 *Phone:* +91 ${phone}\n`;
+      msg += `📍 *Delivery Mode:* ${orderPayload.deliveryType}\n`;
+      if (deliveryType === "home") {
+        msg += `🏠 *Address:* ${address}\n`;
+      }
+      if (notes) {
+        msg += `📝 *Notes:* ${notes}\n`;
+      }
+      msg += `----------------------------------------\n`;
+      msg += `🛒 *ITEMS ORDERED:*\n`;
+
+      cart.forEach((item, index) => {
+        msg += `${index + 1}. ${item.name} (${item.weight}) × ${item.quantity} = ₹${item.price * item.quantity}\n`;
+      });
+
+      msg += `----------------------------------------\n`;
+      msg += `💵 *Items Subtotal:* ₹${subtotal}\n`;
+      msg += `🚚 *Delivery:* ${deliveryFee === 0 ? 'FREE' : '₹' + deliveryFee}\n`;
+      msg += `💰 *GRAND TOTAL:* ₹${grandTotal}\n`;
+      msg += `----------------------------------------\n`;
+      msg += `🙏 _Please confirm availability and share UPI QR / Payment instructions. Thank you!_`;
+
+      const encodedMsg = encodeURIComponent(msg);
+      const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodedMsg}`;
+
+      // Open WhatsApp in a new tab / app
+      window.open(whatsappUrl, "_blank");
+
+      showToast("Opening WhatsApp with your complete order details!");
+    }
+
+    // Copy order summary as backup
+    function copyOrderSummary() {
+      const name = document.getElementById("cust-name").value.trim() || "Customer";
+      const phone = document.getElementById("cust-phone").value.trim() || "-";
+      const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+      
+      let summary = `TRADITIONAL ORGANICS ORDER SUMMARY:\n`;
+      summary += `Customer: ${name} (${phone})\nItems:\n`;
+      cart.forEach((i, idx) => {
+        summary += `${idx + 1}. ${i.name} [${i.weight}] x ${i.quantity} = ₹${i.price * i.quantity}\n`;
+      });
+      summary += `Subtotal: ₹${subtotal}\nOrder Helpline: +91 98765 43210`;
+
+      navigator.clipboard.writeText(summary).then(() => {
+        showToast("Order summary copied to clipboard!");
+      }).catch(() => {
+        showToast("Could not copy order summary");
+      });
+    }
+
+    // 11. TOAST NOTIFICATION UTILITY
+    function showToast(message) {
+      const toast = document.createElement("div");
+      toast.className = "toast-anim bg-stone-900 text-amber-100 text-xs font-semibold py-2.5 px-4 rounded-xl shadow-xl border border-stone-700/60 flex items-center gap-2 pointer-events-auto";
+      toast.innerHTML = `
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span>${message}</span>
+      `;
+      toastContainer.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transition = "opacity 0.3s ease";
+        setTimeout(() => toast.remove(), 300);
+      }, 2500);
+    }
+
+    // 12. INITIALIZATION & EVENT LISTENERS
+    document.addEventListener("DOMContentLoaded", () => {
+      // Render initial products
+      renderProducts();
+      updateCartUI();
+
+      // Category tab click handling
+      const categoryTabs = document.getElementById("category-tabs");
+      categoryTabs.addEventListener("click", (e) => {
+        const btn = e.target.closest(".cat-btn");
+        if (!btn) return;
+
+        document.querySelectorAll(".cat-btn").forEach(b => {
+          b.classList.remove("active-cat", "bg-terracotta-700", "text-white");
+          b.classList.add("text-stone-700", "hover:bg-white/60");
+        });
+
+        btn.classList.add("active-cat", "bg-terracotta-700", "text-white");
+        btn.classList.remove("text-stone-700", "hover:bg-white/60");
+
+        activeCategory = btn.getAttribute("data-cat");
+        renderProducts();
+      });
+
+      // Search input handling
+      const searchInput = document.getElementById("search-input");
+      const clearSearchBtn = document.getElementById("clear-search-btn");
+
+      searchInput.addEventListener("input", (e) => {
+        searchQuery = e.target.value.trim();
+        if (searchQuery.length > 0) {
+          clearSearchBtn.classList.remove("hidden");
+        } else {
+          clearSearchBtn.classList.add("hidden");
+        }
+        renderProducts();
+      });
+
+      clearSearchBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        searchQuery = "";
+        clearSearchBtn.classList.add("hidden");
+        renderProducts();
+        searchInput.focus();
+      });
+
+      document.getElementById("reset-filter-btn")?.addEventListener("click", () => {
+        searchInput.value = "";
+        searchQuery = "";
+        activeCategory = "all";
+        document.querySelectorAll(".cat-btn").forEach(b => {
+          if (b.getAttribute("data-cat") === "all") {
+            b.classList.add("active-cat", "bg-terracotta-700", "text-white");
+          } else {
+            b.classList.remove("active-cat", "bg-terracotta-700", "text-white");
+          }
+        });
+        renderProducts();
+      });
+
+      // Open/close cart
+      document.getElementById("open-cart-btn").addEventListener("click", openCart);
+      document.getElementById("floating-cart-btn").addEventListener("click", openCart);
+      document.getElementById("close-cart-btn").addEventListener("click", closeCart);
+      cartOverlay.addEventListener("click", closeCart);
+      document.getElementById("start-shopping-btn").addEventListener("click", closeCart);
+
+      // Cart action buttons
+      document.getElementById("clear-cart-btn").addEventListener("click", clearCart);
+      document.getElementById("copy-order-btn").addEventListener("click", copyOrderSummary);
+      document.getElementById("checkout-whatsapp-btn").addEventListener("click", handleWhatsAppOrder);
+
+      // Delivery type toggle listeners
+      const radioHome = document.getElementById("radio-home");
+      const radioPickup = document.getElementById("radio-pickup");
+      const labelHome = document.getElementById("label-delivery-home");
+      const labelPickup = document.getElementById("label-delivery-pickup");
+      const addressContainer = document.getElementById("address-container");
+
+      function updateDeliveryRadios() {
+        if (radioPickup.checked) {
+          labelPickup.classList.add("border-terracotta-600", "bg-terracotta-50/50");
+          labelPickup.classList.remove("border-stone-200", "bg-white");
+          labelHome.classList.remove("border-terracotta-600", "bg-terracotta-50/50");
+          labelHome.classList.add("border-stone-200", "bg-white");
+          addressContainer.classList.add("opacity-50");
+        } else {
+          labelHome.classList.add("border-terracotta-600", "bg-terracotta-50/50");
+          labelHome.classList.remove("border-stone-200", "bg-white");
+          labelPickup.classList.remove("border-terracotta-600", "bg-terracotta-50/50");
+          labelPickup.classList.add("border-stone-200", "bg-white");
+          addressContainer.classList.remove("opacity-50");
+        }
+        updateCartUI();
+      }
+
+      radioHome.addEventListener("change", updateDeliveryRadios);
+      radioPickup.addEventListener("change", updateDeliveryRadios);
+
+      // Product modal close listeners
+      document.getElementById("close-modal-btn").addEventListener("click", closeProductModal);
+      productModal.addEventListener("click", (e) => {
+        if (e.target === productModal) closeProductModal();
+      });
+      modalAddBtn.addEventListener("click", () => {
+        if (currentModalProduct) {
+          addToCart(currentModalProduct, currentModalProduct.variants[0].weight, currentModalProduct.variants[0].price);
+          closeProductModal();
+        }
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileNav = document.getElementById("mobile-nav");
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => mobileNav.classList.add("hidden"));
+      });
+
+      // Google Sheets Webhook admin modal
+      const openWebhookBtn = document.getElementById("open-webhook-modal-btn");
+      const closeWebhookBtn = document.getElementById("close-webhook-modal-btn");
+      const cancelWebhookBtn = document.getElementById("cancel-webhook-btn");
+      const saveWebhookBtn = document.getElementById("save-webhook-btn");
+
+      openWebhookBtn.addEventListener("click", () => {
+        webhookUrlInput.value = GOOGLE_SHEETS_WEBHOOK_URL;
+        webhookModal.classList.remove("hidden");
+      });
+      function closeWebhookModal() {
+        webhookModal.classList.add("hidden");
+      }
+      closeWebhookBtn.addEventListener("click", closeWebhookModal);
+      cancelWebhookBtn.addEventListener("click", closeWebhookModal);
+      saveWebhookBtn.addEventListener("click", () => {
+        const val = webhookUrlInput.value.trim();
+        GOOGLE_SHEETS_WEBHOOK_URL = val;
+        localStorage.setItem("TRADITIONAL_SHEETS_WEBHOOK", val);
+        showToast("Webhook endpoint saved successfully!");
+        closeWebhookModal();
+      });
+
+      // Update category counters
+      const countMasalas = PRODUCTS.filter(p => p.category === "masala").length;
+      const countOils = PRODUCTS.filter(p => p.category === "oil").length;
+      const countPickles = PRODUCTS.filter(p => p.category === "pickle").length;
+      document.getElementById("count-all").textContent = PRODUCTS.length;
+      document.getElementById("count-masala").textContent = countMasalas;
+      document.getElementById("count-oil").textContent = countOils;
+      document.getElementById("count-pickle").textContent = countPickles;
+    });
+  </script>
+</body>
+</html>

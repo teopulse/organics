@@ -1,0 +1,6 @@
+{
+  "name": "Traditional Organics — Pure Homemade Masalas & Cold-Pressed Oils",
+  "description": "Authentic homemade stone-ground masalas, mara chekku cold-pressed oils, and traditional pickles with direct WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
